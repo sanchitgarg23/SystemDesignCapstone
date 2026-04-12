@@ -12,77 +12,7 @@ This Use Case Diagram illustrates the functional scope of the **NextStop Admin P
 
 ![Use Case Diagram](./use_case_diagram.png)
 
-```mermaid
-flowchart LR
 
-    Admin(("Admin"))
-
-    subgraph System["Punjab Bus Management System - Admin Portal"]
-
-        UC1([Login])
-        UC2([Logout])
-        UC3([View Dashboard])
-        UC4([View Real-time Stats])
-        UC5([View Network Graph])
-        UC6([View Live Bus Feed])
-        UC7([View Top Routes Summary])
-        UC8([Monitor Live Bus Tracking])
-        UC9([View Bus on Map])
-        UC10([View Bus Details])
-        UC11([Manage Routes])
-        UC12([Create Route])
-        UC13([Edit Route])
-        UC14([Delete Route])
-        UC15(["Upload Routes CSV"])
-        UC16([Build Stop Sequence])
-        UC17([Manage Fleet])
-        UC18([Manage Buses])
-        UC19([Manage Drivers])
-        UC20([Manage Conductors])
-        UC21([Assign Crew to Bus])
-        UC22([View Analytics])
-        UC23([View Revenue Analytics])
-        UC24([View Ticket Analytics])
-        UC25([View Route Performance])
-        UC26([View Demand Analysis])
-
-    end
-
-    Admin --- UC1
-    Admin --- UC2
-    Admin --- UC3
-    Admin --- UC8
-    Admin --- UC11
-    Admin --- UC17
-    Admin --- UC22
-    Admin --- UC26
-
-    UC3 -. "«include»" .-> UC4
-    UC3 -. "«include»" .-> UC5
-    UC3 -. "«include»" .-> UC6
-    UC3 -. "«include»" .-> UC7
-
-    UC8 -. "«include»" .-> UC9
-    UC8 -. "«include»" .-> UC10
-
-    UC11 -. "«include»" .-> UC12
-    UC11 -. "«include»" .-> UC13
-    UC11 -. "«include»" .-> UC14
-    UC11 -. "«include»" .-> UC15
-    UC12 -. "«include»" .-> UC16
-    UC13 -. "«include»" .-> UC16
-
-    UC17 -. "«include»" .-> UC18
-    UC17 -. "«include»" .-> UC19
-    UC17 -. "«include»" .-> UC20
-    UC17 -. "«include»" .-> UC21
-
-    UC22 -. "«include»" .-> UC23
-    UC22 -. "«include»" .-> UC24
-    UC22 -. "«include»" .-> UC25
-```
-
----
 
 ## Sub-System Domains Overview
 
