@@ -1,4 +1,4 @@
-# 🚌 NextStop — Government Bus Tracking & Fleet Management System
+# NextStop — Government Bus Tracking & Fleet Management System
 
 <p align="center">
   <strong>Real-Time Public Transit Operations Platform</strong><br/>
@@ -15,22 +15,22 @@
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 
-- [Project Overview](#-project-overview)
-- [Key Features](#-key-features)
-- [Tech Stack](#-tech-stack)
-- [Architecture & Design Pattern](#-architecture--design-pattern)
-- [Folder Structure](#-folder-structure)
-- [Database Schema](#-database-schema)
-- [API Endpoints](#-api-endpoints)
-- [Setup & Installation](#-setup--installation)
-- [Documentation](#-documentation)
-- [Team Members](#-team-members)
+- [Project Overview](#project-overview)
+- [Key Features](#key-features)
+- [Tech Stack](#tech-stack)
+- [Architecture & Design Pattern](#architecture--design-pattern)
+- [Folder Structure](#folder-structure)
+- [Database Schema](#database-schema)
+- [API Endpoints](#api-endpoints)
+- [Setup & Installation](#setup--installation)
+- [Documentation](#documentation)
+- [Team Members](#team-members)
 
 ---
 
-## 🎯 Project Overview
+## Project Overview
 
 **NextStop** is a comprehensive, real-time government bus tracking and fleet management system designed for public transportation authorities. The platform provides a unified solution for:
 
@@ -42,51 +42,51 @@ The system features a **multi-portal architecture** supporting three distinct us
 
 ---
 
-## ✨ Key Features
+## Key Features
 
-### 🗺️ Real-Time Bus Tracking
+### Real-Time Bus Tracking
 - Live GPS tracking of all buses on a map (OLA Maps integration)
 - SSE (Server-Sent Events) streaming for real-time position updates
 - Heartbeat monitoring with GPS, speed, bearing, and odometer data
 
-### 🎫 Ticketing & Booking System
+### Ticketing & Booking System
 - Conductor-side ticket issuance (cash, card, UPI, pass)
 - Passenger mobile app booking with QR code generation
 - QR code verification at boarding
 - Offline ticket batch sync for areas with poor connectivity
 
-### 🚍 Fleet Management
+### Fleet Management
 - CRUD operations for Buses, Drivers, and Conductors
 - Crew assignment (Driver + Conductor → Bus)
 - Vehicle status tracking (active, inactive, maintenance)
 - Device health monitoring for ETM hardware
 
-### 📊 Analytics & Reporting
+### Analytics & Reporting
 - Real-time operational dashboard with live statistics
 - Revenue analytics with date-based filtering
 - Route performance metrics
 - Ticket analytics with stop-level filtering
 - Demand analysis and passenger load estimation
 
-### 🛣️ Route Management
+### Route Management
 - Full route lifecycle (create, update, delete)
 - Stop-based routing with GPS coordinates and sequencing
 - Bulk route upload via CSV
 - Network graph visualization of the route network
 
-### 🔐 Multi-Tier Authentication
+### Multi-Tier Authentication
 - Admin portal authentication (email/password with Bearer tokens)
 - Passenger app authentication (mobile-based with app tokens)
 - Conductor app authentication (device + conductor tokens)
 - ETM device authentication (API key via X-Device-Key header)
 
-### 🎙️ Voice Query Support
+### Voice Query Support
 - Multilingual voice-based route queries (Punjabi language support)
 - Audio transcription and response system
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Layer          | Technology                          | Purpose                          |
 |----------------|-------------------------------------|----------------------------------|
@@ -105,7 +105,7 @@ The system features a **multi-portal architecture** supporting three distinct us
 
 ---
 
-## 🏗️ Architecture & Design Pattern
+## Architecture & Design Pattern
 
 ### Design Pattern: **MVC (Model-View-Controller)** with **Service Layer**
 
@@ -159,7 +159,7 @@ The project follows a **layered MVC architecture** enhanced with a dedicated Ser
 
 ---
 
-## 📁 Folder Structure
+## Folder Structure
 
 ```
 NextStop/
@@ -253,7 +253,7 @@ NextStop/
 
 ---
 
-## 🗄️ Database Schema
+## Database Schema
 
 The system uses **MongoDB** with **14 collections** managed via Mongoose ODM:
 
@@ -276,7 +276,7 @@ The system uses **MongoDB** with **14 collections** managed via Mongoose ODM:
 
 ---
 
-## 🔌 API Endpoints
+## API Endpoints
 
 ### ETM Device Endpoints (`/etm/v1`) — Requires `X-Device-Key`
 | Method | Endpoint             | Description               |
@@ -328,7 +328,7 @@ The system uses **MongoDB** with **14 collections** managed via Mongoose ODM:
 
 ---
 
-## ⚡ Setup & Installation
+## Setup & Installation
 
 ### Prerequisites
 - Node.js 18+
@@ -367,7 +367,7 @@ npm run simulator   # Simulates bus movement for testing
 
 ---
 
-## 📚 Documentation
+## Documentation
 
 Detailed documentation is available in the following locations:
 
@@ -382,7 +382,7 @@ Detailed documentation is available in the following locations:
 
 ---
 
-## 👥 Team Members
+## Team Members
 
 | Name             | Role                     | Responsibility                    |
 |------------------|--------------------------|-----------------------------------|
@@ -398,5 +398,5 @@ Detailed documentation is available in the following locations:
 ---
 
 <p align="center">
-  <strong>NextStop</strong> — Making Public Transit Smarter 🚌💨
+  <strong>NextStop</strong> — Making Public Transit Smarter
 </p>
