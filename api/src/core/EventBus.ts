@@ -1,3 +1,10 @@
+// This handles Server-Sent Events (SSE) for your live bus tracking map. You need a single centralized "hub" that receives GPS coordinates (heartbeats) and broadcasts them to all connected clients. If you had multiple instances of the EventBus, subscribers might listen to instance A, while GPS data is sent to instance B, causing the tracking feature to break.
+
+
+// this is the singleton pattern
+
+
+
 /**
  * Observer Pattern Implementation — Event Bus
  * 
