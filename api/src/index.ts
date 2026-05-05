@@ -17,8 +17,12 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 const API_BASE = '/etm/v1';
 
-// Middleware
-app.use(cors());
+// Middleware - CORS (allow all origins for cross-domain requests)
+app.use(cors({
+  origin: '*',
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization', 'X-Device-Key'],
+}));
 app.use(express.json());
 
 // Request logging
